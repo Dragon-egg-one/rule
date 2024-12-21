@@ -29,3 +29,5 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
+
+DOMAIN,cdn.usefathom.com
