@@ -175,3 +175,4 @@ ssl-lvlt.cdn.ea.com
 
 # AWS 服务器
 +r5-pc.s3.amazonaws.com  # 服务器质量检测列表
++r5-crossplay.r5prod.stryder.respawn.com
