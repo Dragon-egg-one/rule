@@ -1,29 +1,25 @@
 #!/bin/bash
 
-# 配置信息
-API_TOKEN="uTd9TIKdFQ5H0-Wx_M8MBp-PnjXnQz64WXDbJsaG"  # 替换为你的API Token
-ZONE_ID="dbdf7fd9bf0b8a5d3241e652f3dd10d4"     # 替换为Zone ID
-DOMAIN="bb7.tech"        # 替换为你的域名
-RECORD_NAME="@"     # 替换为子域名（如www或@）
+API_TOKEN="uTd9TIKdFQ5H0-Wx_M8MBp-PnjXnQz64WXDbJsaG"
+ZONE_ID="dbdf7fd9bf0b8a5d3241e652f3dd10d4"    
+DOMAIN="bb7.tech"
+RECORD_NAME="@"
 
-# 获取当前公网IP
 NEW_IP=$(curl -s http://ipecho.net/plain || curl -s http://ifconfig.me)
-# 备用命令：NEW_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
-# 获取DNS记录ID和原IP
-DNS_RECORD=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/ZONE_ID/dns_records?type=A&name=ZONE_ID/dns_records?type=A&name=RECORD_NAME.$DOMAIN" \
+DNS_RECORD=(curl−s−XGET"https://api.cloudflare.com/client/v4/zones/(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/ZONE_ID/dns_records?type=A&name=RECORDNAME.RECORD_NAME.DOMAIN" \
   -H "Authorization: Bearer $API_TOKEN" \
   -H "Content-Type: application/json")
+
 RECORD_ID=(echo(echo DNS_RECORD | jq -r '.result[0].id')
 OLD_IP=(echo(echo DNS_RECORD | jq -r '.result[0].content')
 
-# 更新IP（如果IP变化）
-if [ "$NEW_IP" != "$OLD_IP" ]; then
+if [ "NEWIP"!="NEW_IP" != "OLD_IP" ]; then
   curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/ZONEID/dnsrecords/ZONE_ID/dns_records/RECORD_ID" \
     -H "Authorization: Bearer $API_TOKEN" \
     -H "Content-Type: application/json" \
     --data "{\"type\":\"A\",\"name\":\"RECORDNAME.RECORD_NAME.DOMAIN\",\"content\":\"$NEW_IP\",\"ttl\":120}"
-  echo "(date):IP更新成功→(date): IP更新成功 → NEW_IP" >> /var/log/ddns.log
+  echo "(date):IPupdated→(date): IP updated → NEW_IP" >> /var/log/ddns.log
 else
-  echo "$(date): IP未变化" >> /var/log/ddns.log
+  echo "$(date): IP unchanged" >> /var/log/ddns.log
 fi
