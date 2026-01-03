@@ -1,0 +1,8 @@
+# Gemini (Web/App)
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+
+# Gemini API（如果你有用 API/第三方客户端，建议加）
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
