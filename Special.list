@@ -19,8 +19,6 @@ DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-KEYWORD,epicgames
 
   # > Google
-DOMAIN,safebrowsing.googleapis.com
-DOMAIN-SUFFIX,dl.google.com
 
   # > Microsoft
   # - USER-AGENT,Microsoft%20Remote%20Desktop*
