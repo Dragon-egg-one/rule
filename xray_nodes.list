@@ -1,0 +1,11 @@
+# === 这是一个域名和 IP 混合的自定义列表 ===
+# 如果写的是具体的节点域名
+#DOMAIN,hk01.yournode.com
+#DOMAIN,tw01.yournode.com
+
+# 如果写的是域名的后缀（匹配该域名下的所有子域名）
+#DOMAIN-SUFFIX,yournode.net
+
+# 如果写的是节点的具体外网 IP
+#IP-CIDR,123.45.67.89/32
+#IP-CIDR,98.76.54.32/32
