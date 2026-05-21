@@ -7,3 +7,6 @@ DOMAIN-SUFFIX,bybdc.com
 DOMAIN-SUFFIX,walletconnect.org
 DOMAIN,s3.ap-southeast-1.amazonaws.com
 DOMAIN,aad90d5c0e88c4b4285bd912f64d970d-1403944741.ap-northeast-1.elb.amazonaws.com
+
+# 刚抓到的 Bybit 专属 AWS Cloudfront 节点
+DOMAIN,d3utg2p11b4p8p.cloudfront.net
