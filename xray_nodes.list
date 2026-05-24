@@ -66,3 +66,4 @@ IP-CIDR6,2a06:98c1:3101::eca0:67c1/128,no-resolve
 IP-CIDR6,2a06:98c1:50::dd54:b3ff/128,no-resolve
 
 IP-CIDR,192.129.252.168/32,no-resolve
+IP-CIDR,70.36.96.173/32,no-resolve
