@@ -68,3 +68,7 @@ IP-CIDR6,2a06:98c1:50::dd54:b3ff/128,no-resolve
 IP-CIDR,192.129.252.168/32,no-resolve
 IP-CIDR,70.36.96.173/32,no-resolve
 IP-CIDR,206.237.27.96/32,no-resolve
+IP-CIDR,216.23.85.139/32,no-resolve
+DOMAIN,h.ayasa.ggff.net
+
+
