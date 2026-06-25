@@ -72,4 +72,6 @@ IP-CIDR,216.23.85.139/32,no-resolve
 DOMAIN,h.ayasa.ggff.net
 DOMAIN,comic6.pp.ua
 IP-CIDR,178.83.66.172/32,no-resolve
+IP-CIDR,70.36.96.173/32,no-resolve
+IP-CIDR,154.88.65.55/32,no-resolve
 
