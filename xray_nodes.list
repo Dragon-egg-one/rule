@@ -76,3 +76,8 @@ IP-CIDR,70.36.96.173/32,no-resolve
 IP-CIDR,154.88.65.55/32,no-resolve
 IP-CIDR,82.22.26.181/32,no-resolve
 DOMAIN,c.other5.pp.ua
+IP-CIDR,69.63.217.6/32,DIRECT,no-resolve
+IP-CIDR,104.194.71.150/32,DIRECT,no-resolve
+IP-CIDR,103.117.102.200/32,DIRECT,no-resolve
+IP-CIDR,104.194.93.53/32,DIRECT,no-resolve
+
