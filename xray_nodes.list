@@ -74,4 +74,5 @@ DOMAIN,comic6.pp.ua
 IP-CIDR,178.83.66.172/32,no-resolve
 IP-CIDR,70.36.96.173/32,no-resolve
 IP-CIDR,154.88.65.55/32,no-resolve
-
+IP-CIDR,82.22.26.181/32,no-resolve
+DOMAIN,c.other5.pp.ua
